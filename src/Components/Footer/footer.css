@@ -1,0 +1,154 @@
+.endingcontainer{
+    background-color: rgb(59, 68, 86);
+    height: 140vh;
+}
+.fottddev{
+    display: flex;
+}
+.fotiltle{
+    text-align: center;
+    font-size: clamp(3rem,3vw,4rem);
+    font-weight: 800;
+    margin-top: 2rem;
+}
+.fotiltle:hover{
+    color: orange;
+    animation: transform 0.8s ease red;
+}
+.footparah{
+    text-align: center;
+    font-size: 1vw;
+}
+.foottitle{
+    color: white;
+
+    width: 65vw;
+}
+.footerimage{
+
+    width: 50vw;  
+}
+.allbtns{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.footbuts1,.footbuts2{
+border: 1px solid;
+height: 5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 1rem 4rem;
+border-radius: 15px;
+font-size: large;
+
+}
+.footbuts1{
+    white-space: nowrap;
+    background-color: white;
+    color: rgb(11, 15, 12);
+    font-size: large;
+    font-weight: 800;
+}
+.footbuts1:hover{
+    background-color: white;
+    opacity: 0.2;
+        color: rgb(11, 15, 12);
+}
+.footbuts2{
+    white-space: nowrap;
+    font-size: large;
+    font-weight: 800;
+}
+.footbuts2:hover{
+    background-color: white;
+    color: black;
+}
+.footimg{
+    height: 20rem;
+    transform: rotate(15deg);
+    
+}
+.parahhigh{
+    text-align: center;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+}
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ccc;
+  margin: 2rem auto;
+  width: 80%; /* optional */
+}
+.parenerh1{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+
+}
+.parah{
+    color: white;
+}
+.pbutn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+       white-space: nowrap;
+    background-color: white;
+    color: rgb(11, 15, 12);
+    font-size: large;
+    font-weight: 800;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+}
+.pbutn:hover{
+    color: white;
+    background-color: orange;
+}
+.finaldevmain{
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    font-size: medium;
+font-weight: 300;
+}
+.getin{
+   font-size: 2.5rem;
+    text-align: center;
+    color: red;
+    font-weight: 800;
+}
+.socialmediaconnects{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.iconsimg{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.iconsed{
+  width: 2rem;
+  cursor: pointer;
+}
+.footsers{
+    width: 3rem;
+    
+}
+.some{
+
+     position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+
+   
+}

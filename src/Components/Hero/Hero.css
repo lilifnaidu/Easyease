@@ -1,0 +1,105 @@
+.ultracontainer {
+  margin-top: 6rem; /* matches navbar height */
+  height: calc(100vh - 6rem); /* adjust height */
+  background: linear-gradient(90deg, rgb(225, 215, 144), rgb(141, 141, 228));
+overflow-y: auto;
+}
+.first{
+
+  width: 60vw;
+}
+.mains{
+  display: flex;
+}
+.celeb{
+  font-weight: 800;
+  font-size: 4rem;
+  white-space: nowrap;
+  color: rgb(37, 42, 35);
+  padding: 0 0.5rem;
+}
+.moments{
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 0 0.5rem;
+  color: rgb(237, 143, 143);
+}
+.broadcast{
+ height: 30rem;
+ width: 20rem;
+ margin-top: 3rem;
+ border-radius: 1rem;
+   transform: rotate(-5deg);
+}
+.parah{
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+  width: 50vw;
+}
+.highs{
+  color: rgb(246, 86, 58);
+  font-weight: 800;
+}
+.buts{
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  width: fit-content;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 5rem;
+}
+.btns1{
+  background:linear-gradient(60deg,orange,pink) ;
+border-radius: 0.5rem;
+font-size: large;
+font-weight: 600;
+padding: 0.5rem 2rem;
+color: rgb(53, 63, 56);
+cursor: pointer;
+}
+.btns2{
+  border: 1px solid rgb(170, 234, 243);
+  border-radius: 0.5rem;
+font-size: large;
+font-weight: 600;
+padding: 0.5rem 2rem;
+color: rgb(53, 63, 56);
+cursor: pointer;
+}
+@media (max-width:1000px) {
+  .mains{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .celeb{
+  font-weight: 800;
+  font-size: clamp(1rem,40vw,3rem);
+  white-space: nowrap;
+  color: rgb(37, 42, 35);
+  padding: 0 0.5rem;
+
+
+}
+.moments{
+  font-weight: 800;
+  font-size: 3rem;
+  padding: 0 0.5rem;
+  color: rgb(237, 143, 143);
+
+      font-size: clamp(1.5rem, 5.5vw, 3rem);
+}
+
+  .parah{
+  font-size: 1rem;
+
+}
+.ultracontainer {
+    height: 101vh;
+    overflow-x: hidden;
+  }
+
+}

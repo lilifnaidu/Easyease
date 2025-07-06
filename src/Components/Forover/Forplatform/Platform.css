@@ -1,0 +1,23 @@
+.visioncontainer{
+    width: 60vw;
+    height: fit-content;
+   background:linear-gradient(90deg,rgb(180, 240, 180),rgb(232, 232, 151));
+   margin-top: 2rem;
+   z-index: 999;
+   position: absolute;
+   border-radius: 1rem;
+   box-shadow: 1px,5px,3px,rgba(0, 0, 0, 0.5);
+   animation: transform 0.3s ease-in;
+   left: 10%;
+}
+.lastvision{
+    text-align: center;
+    font-weight:800 ;
+    color: rgb(44, 47, 44);
+}
+.visioparah{
+   font-weight: 400;
+   font-size: large;
+   margin-left: 2rem;
+   margin-right: 2rem;
+}

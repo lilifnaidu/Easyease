@@ -1,0 +1,65 @@
+
+.supercontainer{
+    height: 100vh;
+    background-color: rgb(230, 241, 250);
+}
+.cardssection1,.cardssection2,.cardssection3{
+margin-top: 5rem;
+cursor: pointer;
+width: 15rem;
+height: 15rem;
+background-color: aliceblue;
+border-radius: 5px;
+animation:transform 0.3s ease-in,box-shadow 0.3s ease ;
+
+}
+.cardssection1:hover,.cardssection2:hover,.cardssection3:hover{
+transform: translateY(-10px);
+box-shadow: 0 10px 20px rgba(0 ,0,0,0.1)
+
+}
+.vision{
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgb(42, 55, 42);
+}
+.visionparah{
+    text-align: center;
+
+    padding: 0 20vw;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(53, 59, 53);
+}
+.shortcards{
+    display: flex;
+    justify-content: center;
+   gap: 5rem;
+}
+.imged{
+
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    align-items: center;
+ margin: 0 auto;
+}
+.emoji{
+font-size:2rem;
+}
+.tites{
+    font-size: large;
+    text-align: center;
+    margin-top: 1rem;
+}
+.prah{
+    font-size: medium;
+    text-align: center;
+    color: rgb(32, 35, 32);
+    font-weight: 300;
+    margin: 0 1rem;
+}

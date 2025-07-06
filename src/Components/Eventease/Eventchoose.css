@@ -1,0 +1,82 @@
+.bestcontainer{
+    height: 150vh;
+    background:linear-gradient(90deg,rgb(191, 191, 255),rgb(240, 219, 179));
+}
+
+.itemz2,.itemz3,.itemz4,.itemz5,.itemz6,.itemz1{
+    text-align: center;
+    background-color: white;
+    height: 15rem;
+    width: 30vw;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);    
+    border-radius: 10px;
+}
+.itemz2:hover,.itemz3:hover,.itemz4:hover,.itemz5:hover,.itemz6:hover,.itemz1:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); 
+}
+.containsner{
+    display: flex;
+    flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem; 
+}
+.forimg{
+    font-size: 3rem;
+    background-color: antiquewhite;
+    border-radius: 50%;
+
+}
+.params{
+    font-size: small;
+    font-weight: 400;
+    color: rgb(20, 27, 20);
+}
+.heads{
+    padding: 2rem;
+    font-weight: 800;
+    text-align: center;
+    font-size: 3rem;
+}
+.paragraph{
+    text-align: center;
+}
+.pinkbord{
+    border-radius: 2rem;
+
+    height: 20rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    width: 60vw;
+    margin: 2rem auto 5rem;
+    background:linear-gradient(120deg,rgb(220, 67, 67),rgb(115, 253, 241))
+}
+.titless{
+padding-top: 4rem;
+text-align: center;
+color: white;
+font-weight: 800;
+}
+.parah{
+    color: rgb(20, 33, 20);
+    text-align: center;
+    font-size: medium;
+    font-weight: 800;
+}
+.divbut{
+    border: 1px solid;
+    margin-top: 4rem;
+    height: 3.5rem;
+    width: 18rem;
+    border-radius: 15px ;
+    margin: 4rem auto;
+    text-align: center;
+    background-color: aliceblue;
+    font-weight: 800;
+    font-size: large;
+    color: rgb(183, 121, 40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

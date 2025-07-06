@@ -1,0 +1,58 @@
+.Linkform{
+    height: 80vh;
+    background-color: white;
+    width: 60vw;
+   
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    margin-top: 5vh;
+    border-radius: 2rem;
+box-shadow: 0 5px 5px rgba(0, 0, 0, 0.9);
+}
+.formtitke{
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    font-size: large;
+}
+.getform{
+    margin-left: 2rem;
+}
+.optiongroup{
+    font-size: medium;
+    font-weight: 600;
+}
+.optiongroup option:hover{
+    animation: transform 0.3s ease;
+}
+.Naming{
+    font-size: large;
+   
+}
+.formsmake{
+ margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.formsmake input{
+    width: 25vw;
+    padding-left: 1rem;
+    border: 1px solid;
+}
+.inputdev{
+    margin-top: 1rem;
+}
+button{
+    border: none;
+    text-align: center;
+   background-color: antiquewhite;
+   padding: 1rem 4rem ;
+   margin-top: 2rem;
+   font-size: large;
+   font-weight: 600;
+   border-radius: 12px;
+}
