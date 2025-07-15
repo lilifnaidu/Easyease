@@ -8,8 +8,11 @@ import Ourvision from './Components/Ourvision/Ourvision';
 import EventChoose from './Components/Eventease/EventChoose';
 import FootinftheFooter from './Components/Footer/Footer';
 import Profileview from './Pages/Profileviews/Profileview';
+import Camerasegemt from './Pages/CameraSegments/Camerasegemt';
+import Catering from './Pages/Catering/Catering';
 
 const App = () => {
+
   return (
 <>
 
@@ -26,11 +29,14 @@ const App = () => {
       <Ourvision/>
       <EventChoose/>
       <FootinftheFooter/>
-
+     
     </>
   }/>
-<Route path='/camera' element={<Camera/>}/>
-<Route path='/camera/:name' element={<Profileview/>}/>
+  <Route path='/functiontype' element={<Camerasegemt/>}/>
+<Route path='/camera/:event' element={<Camera/>}/>
+<Route path='/profile/:name' element={<Profileview/>}/>
+<Route path='/Catering' element={<Catering/>}/>
+
 </Routes>
 </BrowserRouter>
 </>

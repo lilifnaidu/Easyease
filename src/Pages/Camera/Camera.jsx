@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './Camera.css'
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import photogrphaerdata from '../../Components/Globaldata/Photogrpaher';
 const Camera = () => {
+  const {event}=useParams()
     const [value,setvalue]=useState('')
     const handleOnchnage=(e)=>{
         setvalue(e.target.value)
@@ -15,7 +16,7 @@ const Camera = () => {
    <div className="cameramain">
    <div className="forsearch">
      <input onChange={handleOnchnage} value={value} type="text" className="search" placeholder='search here by area name/Studio name'/>
-     <button className='btn btn-primary'>Search</button>
+<h2>{event}</h2>
    </div>
    <div className="photocards">
     {
@@ -26,7 +27,7 @@ const Camera = () => {
                 item.location.toLowerCase().includes(tosmall)
             )
         }).map((item,index)=>(
-         <Link to={`/camera/${item.name.replace(/\s+/g,'-').toLocaleLowerCase()}`} className="cardview" key={index}>
+         <Link to={`/profile/${item.name.replace(/\s+/g,'-').toLowerCase()}`} className="cardview" key={index}>
         
                     <div className="imageplace">
                         <img src={item.profilephoto} alt="" className="imgd" />

@@ -1,0 +1,38 @@
+
+.containing{
+    height: 100%;
+    width: 100%;
+    padding-top: 8rem;
+ display: grid;
+  grid-template-columns: repeat(3,1fr);
+
+    
+}
+a{
+    text-decoration: none;
+}
+.makecards {
+
+    cursor: pointer;
+  width: 30rem;
+  height: 20rem;
+  text-align: center;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.makecards:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* fixed rgba */
+  transform: scale(1.03); /* subtle pop effect */
+  border-radius: 10px;
+}
+.makecards h3{
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(61, 70, 61);
+}
+.cardsimage{
+    width:90%;
+    height: 80%;
+    object-fit: cover;
+  border-radius: 10px;
+}

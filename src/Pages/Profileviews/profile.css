@@ -82,5 +82,10 @@
 cursor: pointer;
 }
 .tab{
+    color:black
+}
+.photobtn{
     color: orange;
+    border-bottom: 5px solid;
+    border-radius: 10px;
 }

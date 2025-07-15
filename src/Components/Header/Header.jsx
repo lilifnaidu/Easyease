@@ -10,9 +10,9 @@ const Header = () => {
   const navigate=useNavigate()
 const imgesdata=[
   {
-    img:cam,title:'Camera',navi:'/camera'
+    img:cam,title:'Camera',navi:'/functiontype'
   },{
-    img:chef,title:'Catering'
+    img:chef,title:'Catering',navi:'/Catering'
   },{
     img:frame,title:'Decoration'
   },{img:Hall,title:'Hall'}

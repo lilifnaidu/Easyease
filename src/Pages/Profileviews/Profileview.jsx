@@ -8,6 +8,8 @@ const Profileview = () => {
   const{ name}=useParams()
   console.log(name);
   const [activeTab,setactiveTab]=useState('photos')
+  console.log(activeTab);
+  
   const photographer=photogrphaerdata.find(item=>
     item.name.replace(/\s+/g,'-').toLowerCase()===name
   )
@@ -22,7 +24,7 @@ const Profileview = () => {
           <img src={imag} alt="" className="profilepic" />
         </div>
         <div className="headerdata">
-          <h2 className="profilename">This_is_raju</h2>
+          <h2 className="profilename">{name}</h2>
           <p className="location">chinthal ka model</p>
           <p className="rating">rating</p>
           <p className="exerience">experience</p>
@@ -35,8 +37,8 @@ const Profileview = () => {
       <h3 className="contenthead">Please do check our content</h3>
       <hr className='hrhr'/>
       <div className='divsions'>
-        <div className="photsection" >Photos</div>
-        <div className="videosection" >videos</div>
+        <div className={activeTab =='photos'?'photobtn':'tab'} onClick={()=>setactiveTab('photos')}>Photos</div>
+        <div className={activeTab=='videos'?'photobtn':'tab'} onClick={()=>setactiveTab('videos')} >videos</div>
       </div>
   </div>
  </>
