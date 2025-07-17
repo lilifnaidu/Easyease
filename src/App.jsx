@@ -10,6 +10,7 @@ import FootinftheFooter from './Components/Footer/Footer';
 import Profileview from './Pages/Profileviews/Profileview';
 import Camerasegemt from './Pages/CameraSegments/Camerasegemt';
 import Catering from './Pages/Catering/Catering';
+import Decoration from './Pages/Decoration/Decoration';
 
 const App = () => {
 
@@ -36,6 +37,7 @@ const App = () => {
 <Route path='/camera/:event' element={<Camera/>}/>
 <Route path='/profile/:name' element={<Profileview/>}/>
 <Route path='/Catering' element={<Catering/>}/>
+<Route path='/decoration' element={<Decoration/>}/>
 
 </Routes>
 </BrowserRouter>

@@ -14,7 +14,7 @@ const imgesdata=[
   },{
     img:chef,title:'Catering',navi:'/Catering'
   },{
-    img:frame,title:'Decoration'
+    img:frame,title:'Decoration',navi:'/decoration'
   },{img:Hall,title:'Hall'}
 ]
 const handleRoute=(e)=>{
