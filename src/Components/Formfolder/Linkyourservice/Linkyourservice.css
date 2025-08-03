@@ -1,58 +1,124 @@
-.Linkform{
-    height: 80vh;
-    background-color: white;
-    width: 60vw;
-   
+.Linkform {
+    min-height: 80vh;
+    background: #fff;
+    width: 90vw;
+    max-width: 520px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     z-index: 20;
     margin-top: 5vh;
-    border-radius: 2rem;
-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.9);
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    padding: 2.5rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.formtitke{
+
+.formtitke {
     text-align: center;
-    margin-top: 0.5rem;
-    font-weight: 600;
-    font-size: large;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #333;
+    letter-spacing: 1px;
 }
-.getform{
-    margin-left: 2rem;
+
+.getform {
+    width: 100%;
 }
-.optiongroup{
-    font-size: medium;
-    font-weight: 600;
+
+.optiongroup {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #bbb;
+    margin-bottom: 1.2rem;
+    background: #f8f8f8;
+    outline: none;
+    transition: border 0.2s;
 }
-.optiongroup option:hover{
-    animation: transform 0.3s ease;
+.optiongroup:focus {
+    border: 1.5px solid #ff9800;
 }
-.Naming{
-    font-size: large;
-   
-}
-.formsmake{
- margin-top: 2vh;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-.formsmake input{
-    width: 25vw;
-    padding-left: 1rem;
-    border: 1px solid;
-}
-.inputdev{
+
+.formsmake {
     margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
 }
-button{
+
+.formsmake input,
+.formsmake select {
+    width: 100%;
+    max-width: 320px;
+    padding: 0.7rem 1rem;
+    border: 1px solid #bbb;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background: #f8f8f8;
+    margin-bottom: 0.5rem;
+    outline: none;
+    transition: border 0.2s;
+}
+.formsmake input:focus {
+    border: 1.5px solid #ff9800;
+}
+
+input[type="file"] {
+    background: #fff;
+    border: none;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.inputdev {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+button {
     border: none;
     text-align: center;
-   background-color: antiquewhite;
-   padding: 1rem 4rem ;
-   margin-top: 2rem;
-   font-size: large;
-   font-weight: 600;
-   border-radius: 12px;
+    background: linear-gradient(90deg, #ff9800 60%, #ff5722 100%);
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 0.7rem;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+button:hover {
+    background: linear-gradient(90deg, #e65100 60%, #bf360c 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+@media (max-width: 600px) {
+    .Linkform {
+        width: 98vw;
+        padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+        min-height: 90vh;
+    }
+    .formsmake input,
+    .formsmake select {
+        max-width: 98vw;
+        font-size: 1rem;
+    }
+    button {
+        max-width: 98vw;
+        font-size: 1rem;
+    }
 }

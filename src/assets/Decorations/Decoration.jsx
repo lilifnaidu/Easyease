@@ -26,32 +26,30 @@ import hall29 from '../../assets/Decorations/hall29.jpg'
 
 
  const corationdata=[
-   
-  { cardspic: hall1,cardname:"srigruga decors",location:"balnagar"}
-    ,{cardspic:hall2,cardname:"bhavani decors",location:"chandanagar"},
-    {cardspic:hall3,cardname:"srisai decors",location:"kphb"},
-   { cardspic:hall4,cardname:"chanda decords",location:'kukatpally'},
-   {cardspic:hall5,cardname:"spandana decors",location:'malakpet'},
-   {cardspic:hall6,cardname:'rudra eventz',location:"ram nagar"},
-   {cardspic:hall7,cardname:"priya weddings",location:'erragada'},
-   {cardspic:hall8,cardname:"aadya decor",location:'miyapur'},
-   {cardspic:hall9,cardname:"sailaja events",location:"pragathi nagar"},
-   {cardspic:hall10,cardname:"satya weddings& decors",location:"gachibowli"},
-  { cardspic:hall12,cardname:'sandhya decors',location:'chintal'},
-   {cardspic:hall13,cardname:"madhulika naidu",location:'balangaat'},
-    ,{cardspic:hall15,cardname:'vera reddy decors',location:'borabanda'}
-    ,{cardspic:hall16,cardname:"BN balloon decors",location:'rk events'}
-    ,{cardspic:hall17,cardname:'gouramma flower decors',location:"mandapet"}
-    ,{cardspic:hall18,cardname:'krishna balloon decors',location:'sr nagar'}
-    ,{cardspic:hall19,cardname:'shivaji decors',location:'america'}
-    ,{cardspic:hall20,cardname:'srisai rama decors',location:'banjara hills'}
-    ,{cardspic:hall21,cardname:'hastag party decors',location:'thokku guda'}
-    ,{ cardspic:hall22,cardname:"chanda decords",location:'kukatpally'},
-   {cardspic:hall23,cardname:"spandana decors",location:'malakpet'},
-   {cardspic:hall24,cardname:'rudra eventz',location:"ram nagar"},
-   {cardspic:hall25,cardname:"priya weddings",location:'erragada'},
-     ,{cardspic:hall29,cardname:'vera reddy decors',location:'borabanda'}
-
-
+   { id: 1, cardspic: hall1, cardname: "srigruga decors", location: "balnagar", price: 2000 },
+   { id: 2, cardspic: hall2, cardname: "bhavani decors", location: "chandanagar", price: 2500 },
+   { id: 3, cardspic: hall3, cardname: "srisai decors", location: "kphb", price: 2200 },
+   { id: 4, cardspic: hall4, cardname: "chanda decords", location: 'kukatpally', price: 2100 },
+   { id: 5, cardspic: hall5, cardname: "spandana decors", location: 'malakpet', price: 2300 },
+   { id: 6, cardspic: hall6, cardname: 'rudra eventz', location: "ram nagar", price: 2400 },
+   { id: 7, cardspic: hall7, cardname: "priya weddings", location: 'erragada', price: 2600 },
+   { id: 8, cardspic: hall8, cardname: "aadya decor", location: 'miyapur', price: 2000 },
+   { id: 9, cardspic: hall9, cardname: "sailaja events", location: "pragathi nagar", price: 2100 },
+   { id: 10, cardspic: hall10, cardname: "satya weddings& decors", location: "gachibowli", price: 2500 },
+   { id: 11, cardspic: hall12, cardname: 'sandhya decors', location: 'chintal', price: 2200 },
+   { id: 12, cardspic: hall13, cardname: "madhulika naidu", location: 'balangaat', price: 2300 },
+   { id: 13, cardspic: hall15, cardname: 'vera reddy decors', location: 'borabanda', price: 2400 },
+   { id: 14, cardspic: hall16, cardname: "BN balloon decors", location: 'rk events', price: 2100 },
+   { id: 15, cardspic: hall17, cardname: 'gouramma flower decors', location: "mandapet", price: 2000 },
+   { id: 16, cardspic: hall18, cardname: 'krishna balloon decors', location: 'sr nagar', price: 2200 },
+   { id: 17, cardspic: hall19, cardname: 'shivaji decors', location: 'america', price: 2500 },
+   { id: 18, cardspic: hall20, cardname: 'srisai rama decors', location: 'banjara hills', price: 2600 },
+   { id: 19, cardspic: hall21, cardname: 'hastag party decors', location: 'thokku guda', price: 2100 },
+   { id: 20, cardspic: hall22, cardname: "chanda decords", location: 'kukatpally', price: 2300 },
+   { id: 21, cardspic: hall23, cardname: "spandana decors", location: 'malakpet', price: 2400 },
+   { id: 22, cardspic: hall24, cardname: 'rudra eventz', location: "ram nagar", price: 2200 },
+   { id: 23, cardspic: hall25, cardname: "priya weddings", location: 'erragada', price: 2500 },
+   { id: 24, cardspic: hall29, cardname: 'vera reddy decors', location: 'borabanda', price: 2000 },
 ]
+
 export default corationdata

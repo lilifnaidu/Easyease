@@ -22,10 +22,12 @@ const filtered=decoration.filter((item)=>
     <div className="cardss">
       {
        filtered.map((item)=>(
-          <div className="deccords">
+          <div className="deccords" key={item.id}>
             <img src={item.cardspic} alt=""  className='imgcard'/>
             <h2 className='dechead'>{item.cardname.toUpperCase()}</h2>
             <p className="decparah">{item.location.toUpperCase() }</p>
+            <p className="decprice">Price: ₹{item.price}</p>
+            <button className="viewmore-btn">View More</button>
           </div>
         ))
       }

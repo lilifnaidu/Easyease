@@ -32,11 +32,11 @@ const Navbar = () => {
                 <li onClick={ToggleNav}>Our vision</li>
                 <li>Platform for</li>
                 <li>About us</li>
-            
             </ul>
             {isneed&&<Forvision/>}
         </div>
-                            <div className="Contactus">
+        <button className="add-service-btn">Add Your Service</button>
+        <div className="Contactus">
                                 <span className="full">Call customer care</span>
                                 <span className="half">Call us</span>
                             </div>
