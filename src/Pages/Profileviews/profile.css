@@ -1,91 +1,257 @@
 .bigcontainer{
     padding-top: 7rem;
     text-align: center;
+    min-height: 100vh;
+    background: #f8f9fa;
+}
 
-}
 .profilepic{
-      width: 13rem;
-  height: 13rem;
+    width: clamp(8rem, 25vw, 13rem);
+    height: clamp(8rem, 25vw, 13rem);
     border-radius: 50%;
-   object-fit: cover;
-   border: 5px solid rgb(125, 121, 122);
+    object-fit: cover;
+    border: 5px solid rgb(125, 121, 122);
 }
+
 .image-container{
     margin-top: 2rem;
-    position: relative;
-    left: 30%;
+    display: flex;
+    justify-content: center;
 }
-.profile-header{
-    
-    height: 20rem;
-    width: 20rem;
 
+.profile-header{
+    height: clamp(12rem, 30vw, 20rem);
+    width: clamp(12rem, 30vw, 20rem);
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
 }
 
 .headercontent{
-
     justify-content: space-around;
     display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.headerdata{
 
-    width: 50%;
+.headerdata{
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
 }
+
 .headerdata p{
     font-weight: 500;
-    font-size: large;
-   
+    font-size: clamp(0.9rem, 2.5vw, large);
+    margin: 0.5rem 0;
+    padding: 0.25rem 0;
+    border-bottom: 1px solid #eee;
 }
+
+.headerdata h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin-bottom: 1rem;
+    color: #333;
+}
+
 .contenthead{
     font-weight: 600;
-    font-size: large;
+    font-size: clamp(1rem, 3vw, large);
     color: rgb(80, 85, 90);
+    margin: 2rem 0 1rem 0;
 }
+
 .hrhr{
-    width: 20rem;
-    margin-top: 0.5rem;
+    width: clamp(15rem, 50vw, 20rem);
+    margin: 0.5rem auto;
     background-color: rgb(255, 145, 2);
+    height: 2px;
+    border: none;
 }
+
 .divsions{
     display: flex;
     justify-content: center;
-    gap: 20rem;
-    font-size: large;
+    gap: clamp(2rem, 10vw, 20rem);
+    font-size: clamp(0.9rem, 2.5vw, large);
     font-weight: 600;
-    opacity: 0.5;
+    opacity: 0.8;
+    margin: 2rem 0;
+    flex-wrap: wrap;
 }
+
 .active.tab{
     cursor: pointer;
-      color: orange;
-  border-bottom: 2px solid orange;
-  border-radius: 10px;
+    color: orange;
+    border-bottom: 2px solid orange;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
 }
+
 .tab{
     cursor: pointer;
-}
-.tab {
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  transition: 0.7s;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
 }
 
 .tab:hover {
-  opacity: 0.7;
+    opacity: 0.7;
+    color: orange;
 }
+
 .photsection{
     cursor: pointer;
- 
+}
 
-}
 .videosection{
-cursor: pointer;
+    cursor: pointer;
 }
+
 .tab{
-    color:black
+    color: black;
 }
+
 .photobtn{
     color: orange;
-    border-bottom: 5px solid;
+    border-bottom: 5px solid orange;
     border-radius: 10px;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Tablet breakpoint */
+@media (max-width: 768px) {
+    .bigcontainer {
+        padding-top: 6rem;
+    }
+    
+    .headercontent {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .headerdata {
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    .headerdata p {
+        text-align: center;
+        margin: 0.75rem 0;
+    }
+    
+    .divsions {
+        gap: 3rem;
+        margin: 1.5rem 0;
+    }
+    
+    .contenthead {
+        margin: 1.5rem 0 0.75rem 0;
+    }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 550px) {
+    .bigcontainer {
+        padding-top: 5rem;
+    }
+    
+    .image-container {
+        margin-top: 1rem;
+    }
+    
+    .profilepic {
+        width: clamp(6rem, 20vw, 10rem);
+        height: clamp(6rem, 20vw, 10rem);
+        border-width: 3px;
+    }
+    
+    .profile-header {
+        height: clamp(8rem, 25vw, 15rem);
+        width: clamp(8rem, 25vw, 15rem);
+    }
+    
+    .headercontent {
+        padding: 0 0.5rem;
+        gap: 1rem;
+    }
+    
+    .headerdata h2 {
+        font-size: clamp(1.2rem, 6vw, 1.8rem);
+    }
+    
+    .headerdata p {
+        font-size: clamp(0.8rem, 3.5vw, 1rem);
+        margin: 0.5rem 0;
+    }
+    
+    .contenthead {
+        font-size: clamp(0.9rem, 4vw, 1.1rem);
+        margin: 1.5rem 0 0.5rem 0;
+    }
+    
+    .divsions {
+        gap: 2rem;
+        margin: 1rem 0;
+        font-size: clamp(0.8rem, 3.5vw, 1rem);
+    }
+    
+    .tab, .photobtn, .active.tab {
+        padding: 0.4rem 0.8rem;
+        font-size: clamp(0.8rem, 3.5vw, 1rem);
+    }
+}
+
+/* Extra small mobile */
+@media (max-width: 400px) {
+    .bigcontainer {
+        padding-top: 4rem;
+    }
+    
+    .profilepic {
+        width: clamp(5rem, 18vw, 8rem);
+        height: clamp(5rem, 18vw, 8rem);
+        border-width: 2px;
+    }
+    
+    .profile-header {
+        height: clamp(6rem, 22vw, 12rem);
+        width: clamp(6rem, 22vw, 12rem);
+    }
+    
+    .headercontent {
+        padding: 0 0.25rem;
+        gap: 0.75rem;
+    }
+    
+    .headerdata h2 {
+        font-size: clamp(1rem, 7vw, 1.5rem);
+    }
+    
+    .headerdata p {
+        font-size: clamp(0.75rem, 4vw, 0.9rem);
+        margin: 0.4rem 0;
+    }
+    
+    .contenthead {
+        font-size: clamp(0.8rem, 5vw, 1rem);
+        margin: 1.25rem 0 0.4rem 0;
+    }
+    
+    .divsions {
+        gap: 1.5rem;
+        margin: 0.75rem 0;
+        font-size: clamp(0.75rem, 4vw, 0.9rem);
+    }
+    
+    .tab, .photobtn, .active.tab {
+        padding: 0.3rem 0.6rem;
+        font-size: clamp(0.75rem, 4vw, 0.9rem);
+    }
 }

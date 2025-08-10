@@ -1,154 +1,359 @@
 .endingcontainer{
     background-color: rgb(59, 68, 86);
-    height: 140vh;
+    min-height: 100vh;
+    padding: 2rem 1rem;
 }
+
 .fottddev{
     display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
 .fotiltle{
     text-align: center;
-    font-size: clamp(3rem,3vw,4rem);
+    font-size: clamp(2rem, 6vw, 4rem);
     font-weight: 800;
     margin-top: 2rem;
+    color: white;
+    transition: color 0.3s ease;
 }
+
 .fotiltle:hover{
     color: orange;
-    animation: transform 0.8s ease red;
+    transform: scale(1.05);
 }
+
 .footparah{
     text-align: center;
-    font-size: 1vw;
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    color: white;
+    line-height: 1.6;
 }
+
 .foottitle{
     color: white;
-
-    width: 65vw;
+    width: 100%;
+    max-width: 65vw;
 }
+
 .footerimage{
-
-    width: 50vw;  
+    width: 100%;
+    max-width: 50vw;
+    display: flex;
+    justify-content: center;
 }
+
 .allbtns{
-    margin-top: 5rem;
+    margin-top: 3rem;
     display: flex;
     justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap;
 }
-.footbuts1,.footbuts2{
-border: 1px solid;
-height: 5rem;
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 1rem 4rem;
-border-radius: 15px;
-font-size: large;
 
-}
-.footbuts1{
+.footbuts1,.footbuts2{
+    border: 1px solid;
+    height: auto;
+    min-height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    font-size: clamp(0.9rem, 2.5vw, large);
+    cursor: pointer;
+    transition: all 0.3s ease;
     white-space: nowrap;
+}
+
+.footbuts1{
     background-color: white;
     color: rgb(11, 15, 12);
-    font-size: large;
     font-weight: 800;
+    border-color: white;
 }
+
 .footbuts1:hover{
-    background-color: white;
-    opacity: 0.2;
-        color: rgb(11, 15, 12);
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 .footbuts2{
-    white-space: nowrap;
-    font-size: large;
+    color: white;
+    border-color: white;
     font-weight: 800;
 }
+
 .footbuts2:hover{
     background-color: white;
     color: black;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 .footimg{
-    height: 20rem;
+    height: clamp(12rem, 30vw, 20rem);
     transform: rotate(15deg);
-    
+    object-fit: cover;
+    border-radius: 1rem;
 }
+
 .parahhigh{
     text-align: center;
     color: white;
-    font-size: large;
+    font-size: clamp(1rem, 2.5vw, large);
     font-weight: 600;
+    line-height: 1.6;
+    margin: 1rem 0;
 }
+
 hr {
-  border: none;
-  height: 2px;
-  background-color: #ccc;
-  margin: 2rem auto;
-  width: 80%; /* optional */
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+    margin: 2rem auto;
+    width: 80%;
 }
+
 .parenerh1{
     color: white;
     text-align: center;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 4vw, 2rem);
     font-weight: 800;
-
+    margin: 1rem 0;
 }
+
 .parah{
     color: white;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
 }
+
 .pbutn{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-       white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
     background-color: white;
     color: rgb(11, 15, 12);
-    font-size: large;
+    font-size: clamp(0.9rem, 2.5vw, large);
     font-weight: 800;
     padding: 1rem 2rem;
     border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-height: 44px;
 }
+
 .pbutn:hover{
     color: white;
     background-color: orange;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 .finaldevmain{
     color: white;
     display: flex;
     justify-content: center;
-    gap: 5rem;
-    font-size: medium;
-font-weight: 300;
+    gap: clamp(2rem, 8vw, 5rem);
+    font-size: clamp(0.8rem, 2.5vw, medium);
+    font-weight: 300;
+    flex-wrap: wrap;
+    text-align: center;
 }
+
+.finalp {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
 .getin{
-   font-size: 2.5rem;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
     text-align: center;
     color: red;
     font-weight: 800;
+    margin: 1rem 0;
 }
+
 .socialmediaconnects{
     text-align: center;
     color: white;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 4vw, 2rem);
     font-weight: 800;
+    margin: 1rem 0;
 }
+
 .iconsimg{
     display: flex;
     justify-content: center;
     gap: 2rem;
+    margin: 1rem 0;
 }
+
 .iconsed{
-  width: 2rem;
-  cursor: pointer;
+    width: clamp(1.5rem, 4vw, 2rem);
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
+
+.iconsed:hover {
+    transform: scale(1.2);
+}
+
 .footsers{
-    width: 3rem;
-    
+    width: clamp(2.5rem, 6vw, 3rem);
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
+
+.footsers:hover {
+    transform: scale(1.1);
+}
+
 .some{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 999;
+}
 
-     position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  z-index: 999;
+/* Tablet breakpoint */
+@media (max-width: 768px) {
+    .endingcontainer {
+        padding: 1.5rem 0.75rem;
+    }
+    
+    .fottddev {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .foottitle {
+        max-width: 100%;
+    }
+    
+    .footerimage {
+        max-width: 100%;
+    }
+    
+    .allbtns {
+        margin-top: 2rem;
+        gap: 1.5rem;
+    }
+    
+    .footbuts1, .footbuts2 {
+        padding: 0.75rem 1.5rem;
+        min-height: 2.5rem;
+    }
+    
+    .finaldevmain {
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .iconsimg {
+        gap: 1.5rem;
+    }
+}
 
-   
+/* Mobile breakpoint */
+@media (max-width: 550px) {
+    .endingcontainer {
+        padding: 1rem 0.5rem;
+    }
+    
+    .fotiltle {
+        margin-top: 1rem;
+    }
+    
+    .allbtns {
+        margin-top: 1.5rem;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footbuts1, .footbuts2, .pbutn {
+        width: 100%;
+        max-width: 250px;
+        padding: 0.6rem 1.25rem;
+        min-height: 2.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .footimg {
+        height: clamp(8rem, 25vw, 15rem);
+    }
+    
+    .finaldevmain {
+        gap: 1.5rem;
+        font-size: 0.85rem;
+    }
+    
+    .getin {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+    }
+    
+    .socialmediaconnects {
+        font-size: clamp(1.2rem, 5vw, 1.8rem);
+    }
+    
+    .iconsimg {
+        gap: 1rem;
+    }
+    
+    .some {
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+/* Extra small mobile */
+@media (max-width: 400px) {
+    .endingcontainer {
+        padding: 0.75rem 0.25rem;
+    }
+    
+    .fotiltle {
+        font-size: clamp(1.5rem, 8vw, 2.5rem);
+    }
+    
+    .footparah {
+        font-size: 0.85rem;
+    }
+    
+    .parahhigh {
+        font-size: 0.9rem;
+    }
+    
+    .parenerh1 {
+        font-size: clamp(1.2rem, 5vw, 1.8rem);
+    }
+    
+    .getin {
+        font-size: clamp(1.2rem, 7vw, 1.8rem);
+    }
+    
+    .socialmediaconnects {
+        font-size: clamp(1rem, 6vw, 1.6rem);
+    }
+    
+    .footbuts1, .footbuts2, .pbutn {
+        max-width: 200px;
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .some {
+        bottom: 0.75rem;
+        right: 0.75rem;
+    }
 }

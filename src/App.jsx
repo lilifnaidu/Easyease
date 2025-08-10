@@ -11,6 +11,7 @@ import Profileview from './Pages/Profileviews/Profileview';
 import Camerasegemt from './Pages/CameraSegments/Camerasegemt';
 import Catering from './Pages/Catering/Catering';
 import Decoration from './Pages/Decoration/Decoration';
+import Religioussegement from './Pages/Camerareligion/Religioussegement';
 
 const App = () => {
 
@@ -33,12 +34,12 @@ const App = () => {
      
     </>
   }/>
-  <Route path='/functiontype' element={<Camerasegemt/>}/>
+  <Route path='/functiontype' element={<Religioussegement/>}/>
 <Route path='/camera/:event' element={<Camera/>}/>
 <Route path='/profile/:name' element={<Profileview/>}/>
 <Route path='/Catering' element={<Catering/>}/>
 <Route path='/decoration' element={<Decoration/>}/>
-
+<Route path='/hindu' element={<Camerasegemt/>}/>
 </Routes>
 </BrowserRouter>
 </>

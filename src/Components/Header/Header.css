@@ -3,9 +3,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
- 
-
 }
 .imagess{
     display: flex;
@@ -52,6 +49,9 @@
 }
 
 @media (max-width:500px) {
+    .collections {
+        padding-top: 0; /* Remove 10rem padding for mobile */
+    }
     .icons {
   display: flex;
   flex-direction: column;
