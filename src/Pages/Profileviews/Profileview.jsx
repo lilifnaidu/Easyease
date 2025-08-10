@@ -41,6 +41,17 @@ const Profileview = () => {
         <div className={activeTab=='videos'?'photobtn':'tab'} onClick={()=>setactiveTab('videos')} >videos</div>
       </div>
   </div>
+  {
+    <div className="tabcontent">
+      {
+        activeTab=="photos"&&(
+          <div className="photoselection">
+            {}
+          </div>
+        )
+      }
+    </div>
+  }
  </>
   )
 }

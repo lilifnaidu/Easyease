@@ -6,5 +6,39 @@
 }
 html,body{
     width: 100%;
-  
+    overflow-x: hidden;
+}
+
+/* Mobile-first responsive utilities */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 0.5rem;
+    }
+}
+
+/* Touch-friendly elements */
+button, 
+input, 
+select, 
+textarea {
+    min-height: 44px; /* iOS minimum touch target */
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Prevent horizontal scroll on mobile */
+body {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
